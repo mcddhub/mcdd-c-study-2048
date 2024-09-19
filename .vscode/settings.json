@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "stddef.h": "c",
+        "setjmp.h": "c",
+        "stdarg.h": "c",
+        "cmocka.h": "c",
+        "stdint.h": "c"
+    }
+}
