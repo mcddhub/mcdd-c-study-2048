@@ -19,12 +19,41 @@ void initalize_game()
     game.available_tiles = 16;
 }
 
-void show_grid(){
-    printf("当前网格: \n");
-    for (int row = 0; row < ROW; ++row) {
-        for (int col = 0; col < COL; ++col) {
-            printf("%4d",game.grid[row][col]);
+void show_grid()
+{
+    printf("current grid: \n");
+    for (int row = 0; row < ROW; ++row)
+    {
+        for (int col = 0; col < COL; ++col)
+        {
+            printf("%4d", game.grid[row][col]);
         }
-    printf("\n");
+        printf("\n");
+    }
+}
+
+void add_random_tile()
+{
+    for (int i = 0; i < 2; i++)
+    {
+        if (game.available_tiles == 0)
+        {
+            break;
+        }
+        do
+        {
+            int row = rand() % 4;
+            int col = rand() % 4;
+            // 找到空白位置
+            if (game.grid[row][col] == 0)
+            {
+                game.grid[row][col] = (rand() % 2 + 1) * 2;
+                game.available_tiles--;
+                break;
+            }
+            
+        } while (i);
+        
+        
     }
 }
