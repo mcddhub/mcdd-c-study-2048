@@ -8,8 +8,8 @@
             "args": [
                 "-std=c99",
                 "-g",
-                "D:/@code-mcddhub/mcdd-c-study-2048/test_part01_init.c",
-                "D:/@code-mcddhub/mcdd-c-study-2048/part01_init.c", // 添加 part01_init.c 文件
+                "D:/@code-mcddhub/mcdd-c-study-2048/test.c",
+                "D:/@code-mcddhub/mcdd-c-study-2048/main.c",
                 "-o",
                 "D:/@code-mcddhub/mcdd-c-study-2048/test.exe",
                 "-I",
