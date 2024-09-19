@@ -1,4 +1,9 @@
 *.exe
+build/
+.archive/
+.runtime/
+.library/
+.vscode/
 # Prerequisites
 *.d
 
