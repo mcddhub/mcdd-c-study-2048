@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <setjmp.h>
 #include <cmocka.h>
-#include "main.h"
+#include "game.h"
 
 static void should_init_success(void **state)
 {
