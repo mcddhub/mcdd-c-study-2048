@@ -2,14 +2,35 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build main",
             "type": "shell",
             "command": "gcc",
             "args": [
                 "-std=c99",
                 "-g",
-                "D:/@code-mcddhub/mcdd-c-study-2048/test_part01_init.c",
-                "D:/@code-mcddhub/mcdd-c-study-2048/part01_init.c", // 添加 part01_init.c 文件
+                "D:/@code-mcddhub/mcdd-c-study-2048/game.c",
+                "D:/@code-mcddhub/mcdd-c-study-2048/main.c",
+                "-o",
+                "D:/@code-mcddhub/mcdd-c-study-2048/main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building cmocka project"
+        },
+        {
+            "label": "build test",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-std=c99",
+                "-g",
+                "D:/@code-mcddhub/mcdd-c-study-2048/test.c",
+                "D:/@code-mcddhub/mcdd-c-study-2048/game.c",
                 "-o",
                 "D:/@code-mcddhub/mcdd-c-study-2048/test.exe",
                 "-I",

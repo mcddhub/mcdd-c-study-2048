@@ -15,3 +15,7 @@ typedef struct
 extern game_state game;
 
 void initalize_game();
+
+void show_grid();
+
+void add_random_tile();
